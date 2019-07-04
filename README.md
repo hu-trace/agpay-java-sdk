@@ -29,3 +29,9 @@ if(resp.getIntValue("code") == 0) {
   System.out.println(resp.getString("msg"));
 }
 ```
+
+### 所有接口均使用此流程进行调用
+1. 构造``HttpModule``
+2. 给``HttpModule``设置参数
+3. 执行
+4. 判断code是否为0
